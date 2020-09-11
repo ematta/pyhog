@@ -20,3 +20,7 @@ venv:
 .PHONY: test
 test: venv
 	source .venv/bin/activate && python3 -m pytest --cov=openapi_client
+
+.PHONY: build
+build: venv
+	source .venv/bin/activate && python3 setup.py sdist bdist_wheel
