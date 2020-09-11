@@ -42,7 +42,7 @@ class TestMessages(unittest.TestCase):
                 messages = [
                     openapi_client.models.message.Message(
                         id = '0', 
-                        from = openapi_client.models.path.Path(
+                        _from = openapi_client.models.path.Path(
                             relays = [
                                 '0'
                                 ], 
@@ -55,7 +55,7 @@ class TestMessages(unittest.TestCase):
                                 domain = '0', 
                                 params = '0', )
                             ], 
-                        headers = openapi_client.models.headers.headers(), 
+                        # headers = openapi_client.models.headers.headers(), 
                         size = 1.337, 
                         created = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                     ]
